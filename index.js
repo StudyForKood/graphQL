@@ -118,8 +118,13 @@ async function request() {
       const auditReceived = totalDown / 1000;
       document.getElementById("name").textContent = firstName + " " + lastName;
       document.getElementById("email").textContent = email;
-      document.getElementById("from").textContent = city + "," + country;
-      document.getElementById("phone").textContent = phone;
+
+      //BUG
+      // document.getElementById("from").textContent = city + "," + country;
+      // document.getElementById("phone").textContent = phone;
+      // document.getElementById("from").innerHTML = data.user[0].attrs.addressCity + ', ' + data.user[0].attrs.addressCountry
+      // document.getElementById('phone').innerHTML = data.user[0].attrs.phone
+
       document.getElementById("xp").textContent =
         (totalXp / 1000).toFixed(0) + "kB";
       document.getElementById("audit-done").textContent = `${auditDone.toFixed(
