@@ -1,0 +1,87 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f5f6;
+  color: #3a3a3a;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#login-form h1 {
+  color: #e84964;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#submit {
+  background-color: #e84964;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: #d33e56;
+}
+
+#error-container {
+  color: #e84964;
+}
+
+#profile-container {
+  display: none;
+}
+
+#logout-button {
+  background-color: #e84964;
+  color: #fff;
+}
+
+.card {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  color: #e84964;
+}
+
+.info-list,
+.audit-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.info-list li,
+.audit-list li {
+  margin: 10px 0;
+}
+
+.info-list strong {
+  color: #e84964;
+}
