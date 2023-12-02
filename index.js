@@ -90,7 +90,7 @@ async function request() {
   })
     .then((response) => response.json())
     .then((result) => {
-      const { email, firstName, lastName, phone, city, country } =
+      const { email, firstName, lastName, tel, addressCity, country } =
         result.data.user[0].attrs;
       const { totalDown, totalUp } = result.data.user[0];
       const transactions = result.data.user[0].transactions;
@@ -119,11 +119,11 @@ async function request() {
       document.getElementById("name").textContent = firstName + " " + lastName;
       document.getElementById("email").textContent = email;
 
-      //BUG
-      // document.getElementById("from").textContent = city + "," + country;
-      // document.getElementById("phone").textContent = phone;
+      //BUG FIX
+      document.getElementById("from").textContent = addressCity + "," + country;
+      document.getElementById("phone").textContent = tel;
       // document.getElementById("from").innerHTML = data.user[0].attrs.addressCity + ', ' + data.user[0].attrs.addressCountry
-      // document.getElementById('phone').innerHTML = data.user[0].attrs.phone
+      // document.getElementById( tel').innerHTML = data.user[0].attrs tel
 
       document.getElementById("xp").textContent =
         (totalXp / 1000).toFixed(0) + "kB";

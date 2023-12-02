@@ -17,6 +17,8 @@ Use (https://github.com/01-edu/public/tree/master/subjects/graphql/audit) for th
 On registration page you need to pass your own login and password that you use
 to login at Kood Johvi.
 
+Hosting webpage https://studyforkood.github.io/graphQL/
+
 ### Author
 
 [Olga Domashenko](https://01.kood.tech/git/odomashe)
