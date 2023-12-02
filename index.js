@@ -120,7 +120,8 @@ async function request() {
       document.getElementById("email").textContent = email;
 
       //BUG FIX
-      document.getElementById("from").textContent = addressCity + "," + country;
+      document.getElementById("from").textContent =
+        addressCity + ", " + country;
       document.getElementById("phone").textContent = tel;
       // document.getElementById("from").innerHTML = data.user[0].attrs.addressCity + ', ' + data.user[0].attrs.addressCountry
       // document.getElementById( tel').innerHTML = data.user[0].attrs tel
